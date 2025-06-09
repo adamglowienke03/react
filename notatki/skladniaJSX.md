@@ -1,13 +1,13 @@
-# JSX
-### Pomimo że wygląda bardzo podobnie to nie jest HTML. JSX jest specjalną składnią tłumaczoną w całości na JS
+# JSX/TSX
+### Pomimo że wygląda bardzo podobnie to nie jest HTML. JSX/TSX jest specjalną składnią tłumaczoną w całości na JS
 
-## JSX na JS
+## JSX/TSX na JS
 ### Element zapisany jako:
 ```html
 <h1>Hello World!</h1>
 ```
 ### zostanie przekształcony na:
-```js
+```jsx
 __jsx('h1', {children: 'Hello World!'})
 ```
 
@@ -36,10 +36,10 @@ createRoot(document.getElementById('root')!).render(
 **Opis działania:**
 
 1. **filter(el => el % 2)**  
-    Filtruje tablicę `values`, wybierając tylko liczby nieparzyste (bo `el % 2` zwraca `true` dla nieparzystych).
+Filtruje tablicę `values`, wybierając tylko liczby nieparzyste (bo `el % 2` zwraca `true` dla nieparzystych).
 
 2. **map(el => el ** 2)**  
-   Podnosi każdą z tych liczb do kwadratu.
+Podnosi każdą z tych liczb do kwadratu.
 
 3. **join("-")**  
-   Łączy wyniki w jeden napis, rozdzielając je myślnikiem.
+Łączy wyniki w jeden napis, rozdzielając je myślnikiem.
