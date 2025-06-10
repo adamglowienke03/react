@@ -1,27 +1,23 @@
 import { createRoot } from 'react-dom/client'
 import './index.css'
+import type { CSSProperties } from 'react'
+import React from 'react'
 
-// let greeting = <h1>Witaj</h1>
-
-// const myName = prompt("Podaj swoje imię: ")
-
-// if(myName !== "Adam")
-//   greeting = <h1>Nie masz dostępu</h1>
-
-const first = 5
-const second = 10
-
-const fname = "Jan"
-const sname = "Kowalski"
-
-const displayName = (firstName: string, lastName: string) => {
-  return <h1>Imię: {firstName}, Nazwisko: {lastName}</h1>
+let userColor = prompt("Podaj kolor(w postaci np: #ff43a1): ")
+let content = null
+if(userColor?.length !== 7)
+{
+  userColor = "black"
+  content = "Błędny kolor!"
 }
-
 
 createRoot(document.getElementById('root')!).render(
   <>
-    <h1>{first + second}</h1>
-    <div>{displayName(fname, sname)}</div>
+    <div style={{
+      width: 100,
+      height: 100,
+      color: 'white',
+      backgroundColor: userColor
+    }}>{content}</div>
   </>
 )
