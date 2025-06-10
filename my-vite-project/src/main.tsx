@@ -1,17 +1,27 @@
 import { createRoot } from 'react-dom/client'
 import './index.css'
 
-const value1 = Number(prompt("Podaj pierwszą liczbę: "))
-const value2 = Number(prompt("Podaj drugą liczbę: "))
+// let greeting = <h1>Witaj</h1>
 
-const values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// const myName = prompt("Podaj swoje imię: ")
 
-const myName = "Adam";
+// if(myName !== "Adam")
+//   greeting = <h1>Nie masz dostępu</h1>
 
-const transformMe = (value: string) => {
-  return value.toLocaleUpperCase();
+const first = 5
+const second = 10
+
+const fname = "Jan"
+const sname = "Kowalski"
+
+const displayName = (firstName: string, lastName: string) => {
+  return <h1>Imię: {firstName}, Nazwisko: {lastName}</h1>
 }
 
+
 createRoot(document.getElementById('root')!).render(
-  <h1>Hello {transformMe(myName)}, {value1 + value2}, {values.filter(el => el % 2).map(el => el ** 2).join("-")}</h1>
+  <>
+    <h1>{first + second}</h1>
+    <div>{displayName(fname, sname)}</div>
+  </>
 )
