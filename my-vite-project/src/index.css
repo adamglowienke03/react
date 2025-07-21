@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(230, 31, 31);
+}
+a{
+    margin-right: 10px;
+}
+.home-wrapper{
+    background-color: blue;
+}
+
+p {
+  font-size: 20px;
+}
+
+
+.section-primary{
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+.btn{
+  padding: 8px 32px;
+  background-color: red;
+  color: white;
+}
+.btn-blue{
+  padding: 8px 32px;
+  background-color: blue;
+  color: white;
+}
+
+.navbar{
+  background-color: gray;
+}
+.navbar ul{
+  list-style: none;
+}
+.navbar a{
+  background-color: black;
+  color: aliceblue;
+}
